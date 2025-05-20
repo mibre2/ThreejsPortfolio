@@ -22,7 +22,7 @@ const Hero = () => {
             position={isMobile && [0, -1.7, 0]}
           />
           {/* Allows the camera to orbit around a target */}
-          <OrbitControls autoRotate={true} />
+          <OrbitControls />
         </Canvas>
       </figure>
     </section>
