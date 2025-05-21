@@ -41,7 +41,7 @@ const About = () => {
               text="Design Patterns"
             />
             <Card
-              style={{ rotate: "45deg", top: "55%", left: "0%" }}
+              style={{ rotate: "-45deg", top: "55%", left: "0%" }}
               text="Design Principles"
             />
             <Card
