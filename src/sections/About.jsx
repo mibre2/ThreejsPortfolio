@@ -48,6 +48,18 @@ const About = () => {
               style={{ rotate: "20deg", top: "10%", left: "38%" }}
               text="SRP"
             />
+            <Card
+              style={{ rotate: "30deg", top: "70%", left: "70%" }}
+              image="assets/logos/python-logo.png"
+            />
+            <Card
+              style={{ rotate: "-45deg", top: "65%", left: "22%" }}
+              image="assets/logos/java-logo.png"
+            />
+            <Card
+              style={{ rotate: "-45deg", top: "5%", left: "10%" }}
+              image="assets/logos/react-logo.png"
+            />
           </div>
         </div>
 
