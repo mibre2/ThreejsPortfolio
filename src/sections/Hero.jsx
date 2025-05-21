@@ -1,9 +1,12 @@
-import { Canvas } from "@react-three/fiber";
+import { Canvas, useFrame } from "@react-three/fiber";
 import HeroText from "../components/HeroText";
 import { Astronaut } from "../components/Astronaut";
 import ParallaxBackground from "../components/ParallaxBackground";
-import { OrbitControls } from "@react-three/drei";
+import { Float } from "@react-three/drei";
 import { useMediaQuery } from "react-responsive";
+import { easing } from "maath";
+import { Suspense } from "react";
+import Loader from "../components/Loader";
 
 const Hero = () => {
   const isMobile = useMediaQuery({ maxWidth: 853 });
@@ -17,16 +20,29 @@ const Hero = () => {
         style={{ width: "100vw", height: "100vh" }}
       >
         <Canvas camera={{ position: [0, 1, 3] }}>
-          <Astronaut
-            scale={isMobile && 0.23}
-            position={isMobile && [0, -1.7, 0]}
-          />
-          {/* Allows the camera to orbit around a target */}
-          <OrbitControls />
+          <Suspense fallback={<Loader />}>
+            <Float>
+              <Astronaut
+                scale={isMobile && 0.23}
+                position={isMobile && [0, -1.7, 0]}
+              />
+            </Float>
+            <Rig />
+          </Suspense>
         </Canvas>
       </figure>
     </section>
   );
 };
 
+function Rig() {
+  return useFrame((state, delta) => {
+    easing.damp3(
+      state.camera.position,
+      [state.mouse.x / 10, 1 + state.mouse.y / 10, 3],
+      0.25,
+      delta
+    );
+  });
+}
 export default Hero;
