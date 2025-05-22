@@ -1,4 +1,3 @@
-import React from "react";
 import Navbar from "./sections/Navbar";
 import Hero from "./sections/Hero";
 import About from "./sections/About";
@@ -13,8 +12,9 @@ const App = () => {
       <section className="min-h-screen" />
       <section className="min-h-screen" />
       <section className="min-h-screen" />
-      {/* projects */}
       {/* experience */}
+      {/* projects */}
+
       {/* testimonials */}
       {/* contact */}
       {/* footer */}
