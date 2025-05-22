@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import Card from "../components/card";
+import { Globe } from "../components/Globe";
 
 const About = () => {
   const grid2Container = useRef();
@@ -77,9 +78,27 @@ const About = () => {
         </div>
 
         {/* Grid 3 */}
-        <div className="grid-black-color grid-3"></div>
+        <div className="grid-black-color grid-3">
+          <div className="z-10 w-[50%]">
+            <p className="headtext">Time Zone</p>
+            <p className="subtext">
+              I'm based in the DMV area of the United States and am open to
+              hybrid/remote work.
+            </p>
+          </div>
+          <figure className="absolute left-[30%] top-[10%]">
+            <Globe />
+          </figure>
+        </div>
+
         {/* Grid 4 */}
-        <div className="grid-special-color grid-4"></div>
+        <div className="grid-special-color grid-4">
+          <div className="flex flex-col items-center justify-center gap-4 size-full">
+            <p className="text-center headtext">
+              Do you want to start a project together?
+            </p>
+          </div>
+        </div>
         {/* Grid 5 */}
         <div className="grid-default-color grid-5"></div>
       </div>
