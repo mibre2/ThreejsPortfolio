@@ -104,7 +104,14 @@ const About = () => {
         </div>
         {/* Grid 5 */}
         <div className="grid-default-color grid-5">
-          <div className="absolute inset-y-0 md:inset-y-9 w-full h-full start-[50%%] md:scale-125">
+          <div className="z-10 w-[50%]">
+            <p className="headtext">Tech Stack</p>
+            <p className="subtext">
+              I've worked with a wide range of tech stacks and frameworks that
+              allow me to build robust and scalable applications
+            </p>
+          </div>
+          <div className="absolute inset-y-0 md:inset-y-9 w-full h-full start-[50%] md:scale-125">
             <Frameworks />
           </div>
         </div>
