@@ -1,26 +1,24 @@
 import { OrbitingCircles } from "./OrbitingCircle";
 
 export function Frameworks() {
-  //   TODO: X off more logos and add more that's needed
-  // At max
   const skills = [
-    "html5", // x
-    "css3", // x
-    "javascript", // x
-    "python", // x
-    "java", // x
-    "sql", // x
-    "tailwindcss", // x
-    "react", // x
-    "vuejs", // x
-    "threejs", // x
-    "nodejs", // TODO: FIND ALTERNATIVE IMAGE
+    "html5",
+    "css3",
+    "javascript",
+    "python",
+    "java",
+    "sql",
+    "tailwindcss",
+    "react",
+    "vuejs",
+    "threejs",
+    "nodejs",
     "typescript",
-    "aws", // x
-    "git", // x
-    "github", // x
-    "microsoft", // x
-    "linux" // x
+    "aws",
+    "git",
+    "github",
+    "microsoft",
+    "linux"
   ];
   return (
     <div className="relative flex h-[15rem] w-full flex-col items-center justify-center ">
