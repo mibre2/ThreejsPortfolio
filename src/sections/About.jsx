@@ -84,7 +84,7 @@ const About = () => {
           <div className="z-10 w-[50%]">
             <p className="headtext">Time Zone</p>
             <p className="subtext">
-              I'm based in the DMV area of the United States and am open to
+              I'm based in the DMV area of the United States and open to
               hybrid/remote work.
             </p>
           </div>
