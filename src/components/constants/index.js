@@ -239,36 +239,40 @@ export const mySocials = [
 export const experiences = [
   
   {
-    title: "Full Stack Developer",
-    job: "Software Engineer Consultant",
+    title: "Software Engineer Consultant",
+    job: "Booz Allen Hamilton",
     date: "2022-2025",
     contents: [
-      "Created a personal portfolio using Three.js, React, Vite, and WebAPI to showcase technical expertise.",
-      "Continuously enhancing technical skills and expanding expertise in modern web development and back-end technologies.",
+       "Designed and deployed scalable, secure cloud-based solutions using AWS (EC2, Lambda, S3, IAM, SQS, Redshift) to optimize performance and cost.",
+        "Successfully delivered 3 simultaneous projects to production on a small team of 3 developers.",
+        "Independently developed FastAPI-based RESTful APIs for JSON validation, and data processing pipelines handling 300,000 daily uploads.",
+        "Created a React-based document viewer (PDF & TIFF), enhancing user accessibility for 1M+ users.",
+        "Automated deployment and monitoring for web services processing 75 million weekly users.",
+        "Debugged a critical bug impacting hyphenated usernames processing in full/partial name search functionality, improving system accuracy for over 162,000 users.",
+        "Resolved AWS Redshift/SQL user info duplicating to different file paths causing an overflow of 1 billion record limit.",
+        "Developed two JAWS-compatible interfaces for VAS web application, allowing accessibility to 130,000 daily visually impaired users and over 1million+ users with sight disabilities."
     ],
   },
   {
     title: "Freelance Software Engineer",
-    job: "Software Engineer",
-    date: "2023-2024",
+    job: "Upwork",
+    date: "2021-2022",
     contents: [
-      "Engineered systems for large-scale data ingestion and analysis, ensuring efficient data processing and storage.",
-      "Developed back-end systems enabling vehicle-to-cloud communication for telemetry, diagnostics, and remote control:",
-      "✅ Implemented secure APIs, following ISO 26262 automotive safety standards.",
-      "✅ Ensured data privacy for customers and partners through industry-compliant protocols.",
-      "✅ Delivered remote features like over-the-air updates, real-time tracking, and remote start capabilities.",
+      "Built a client’s website portfolio using HTML5, CSS, JavaScript, and Vue.js.",
+      "Containerized and deployed an Angular.js website using Docker, ensuring consistent development environments.",
+      "Engineered a privacy-focused search engine, Horus, that uses proxy chaining to anonymize IP addresses and avoid saving search history, cutting server rental costs by ~6K annually.",
+      "Designed an Android app, Flixster, displaying movie details via Parse as its backend.",
+      "Contributed to UI/UX design of Discord bot Avrae that allows users to play tabletop games on the Discord platform."
     ],
   },
   {
-    title: "Software Developer",
-    job: "Security & Defense Projects",
-    date: "2021-2023",
+    title: "Software Engineer Contractor",
+    job: "BENU Productions LLC.",
+    date: "2021",
     contents: [
-      "Enhanced application security and developed new features, adhering to standards set by the Passive Defense Organization and National Cyberspace Center.",
-      "Designed and implemented intuitive map interfaces using MapsUI, enhancing user experience and enabling seamless interactive map integration.",
-      "Developed applications for industrial automation, leveraging C++ and the Fatek API for PLC communication.",
-      "Enhanced responsiveness and usability of applications using Windows Forms and WPF frameworks.",
-      "Executed XML to SVG conversions using X-DOM, ensuring dynamic and efficient data visualization.",
+      "Developed 3D object inspection system in AR/VR videogame.",
+      "Converted Unreal Engine Blueprints to C++ for better performance and control over system resources by 50%.",
+      "Collaborated with producers, designers, artists, and engineers to create user interfaces for AR/VR application."
     ],
   },
 ];
