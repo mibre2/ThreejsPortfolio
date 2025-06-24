@@ -4,10 +4,15 @@ const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    message: "",
+    message: ""
   });
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(formData);
   };
 
   return (
@@ -20,7 +25,7 @@ const Contact = () => {
             existing project, I'm always open to new opportunities. Let's chat!
           </p>
         </div>
-        <form className="w-full">
+        <form className="w-full" onSubmit={handleSubmit}>
           <div className="mb-5">
             <label htmlFor="name" className="field-label">
               Full Name
@@ -72,7 +77,10 @@ const Contact = () => {
               required
             />
           </div>
-          <button className="w-full px-1 py-3 text-lg text-center rounded-md cursor-pointer bg-radial from-lavender to-royal hover-animation">
+          <button
+            type="submit"
+            className="w-full px-1 py-3 text-lg text-center rounded-md cursor-pointer bg-radial from-lavender to-royal hover-animation"
+          >
             Submit
           </button>
         </form>
