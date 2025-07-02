@@ -1,6 +1,6 @@
 import { twMerge } from "tailwind-merge";
 import { Marquee } from "../components/Marquee";
-import { reviews } from "../components/constants";
+import { reviews } from "../constants";
 import { div } from "motion/react-client";
 
 const firstRow = reviews.slice(0, reviews.length / 2);
