@@ -35,7 +35,7 @@ const ReviewCard = ({ img, name, username, body }) => {
 
 export default function Testimonial() {
   return (
-    <div className="items-start mt-25 md:mt-35 c-space">
+    <div id="testimonials" className="items-start mt-25 md:mt-35 c-space">
       <h2 className="text-heading">Hear from My Clients</h2>
       <div className="relative flex w-full flex-col items-center justify-center overflow-hidden">
         <Marquee pauseOnHover className="[--duration:20s]">

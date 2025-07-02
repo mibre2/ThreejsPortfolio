@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import { motion } from "motion/react";  // motion is used to animate react UIs.
+import { motion } from "motion/react"; // motion is used to animate react UIs.
 
 function Navigation() {
   return (
@@ -18,6 +18,11 @@ function Navigation() {
       <li className="nav-li">
         <a className="nav-link" href="#work">
           Work
+        </a>
+      </li>
+      <li className="nav-li">
+        <a className="nav-link" href="#testimonials">
+          Testimonials
         </a>
       </li>
       <li className="nav-li">
@@ -58,7 +63,7 @@ const Navbar = () => {
       {isOpen && (
         <motion.div
           className="block overflow-hidden text-center sm:hidden"
-          initial={{ opacity: 0, x: -10 }}  // 
+          initial={{ opacity: 0, x: -10 }} //
           animate={{ opacity: 1, x: 0 }}
           style={{ maxHeight: "100vh" }}
           transition={{ duration: 1 }}
