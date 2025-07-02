@@ -70,7 +70,7 @@ A modern, animated 3D developer portfolio built with React, Three.js, TailwindCS
 1. Clone the Repository
 
 ```bash
-git clone https://github.com/Ali-Sanati/Portfolio.git
+git clone https://github.com/mibre2/ThreejsPortfolio.git
 cd Portfolio
 ```
 
