@@ -7,7 +7,7 @@ export default defineConfig({
   plugins: [react(), tailwindcss()],
   build: {
     rollupOptions: {
-      external: ['@emailjs/browser'],
+      external: ['/node_modules/@emailjs/browser'],
     },
   },
 })
